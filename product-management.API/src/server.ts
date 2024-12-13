@@ -17,6 +17,8 @@ import { specs } from "./config/swagger";
 
 export const application = express();
 export let httpServer: ReturnType<typeof http.createServer>;
+require('dotenv').config();
+
 
 export const Main = async () => {
   logging.log("----------------------------------------");
